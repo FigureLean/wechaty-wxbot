@@ -1,0 +1,29 @@
+{
+  "name": "wechaty-puppet-padlocal-demo",
+  "version": "0.1.2",
+  "description": "Demo for wechaty-puppet-padlocal",
+  "author": "haoda",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "file-box": "^1.5.5",
+    "mysql": "^2.18.1",
+    "qrcode-terminal": "^0.12.0",
+    "wechaty": "^1.19.10",
+    "wechaty-puppet": "^1.19.6",
+    "wechaty-puppet-padlocal": "^1.11.18"
+  },
+  "devDependencies": {
+    "@types/mysql": "^2.15.25",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "scripts": {
+    "demo": "npx ts-node main.ts",
+    "demo-esm": "cross-env NODE_OPTIONS=\"--no-warnings --loader=ts-node/esm\" node main.ts"
+  },
+  "engines": {
+    "node": ">= 16",
+    "npm": ">=7"
+  }
+}
